@@ -13,3 +13,9 @@
     color: #fff;
     text-align: center;
 }
+
+.blog {
+    display: inline-block;
+    width: 40%;
+    outline: 2px solid red;
+}
