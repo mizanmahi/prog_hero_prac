@@ -34,12 +34,18 @@ header {
     transition: all .5s;
 }
 
+.navigation > li:hover > a{
+    filter: brightness(200%);
+}  
+
 /* dropdown css */
 
 .sub-navigation {
     display: none;
     background: #2b2d42;
     border-top: 5px solid #8d99ae;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: .51rem 0;
 }
 .navigation > li:hover .sub-navigation{
     display: block;
@@ -55,9 +61,12 @@ header {
     text-decoration: none;
     font-size: 1.2rem;
     padding: 1rem;
+    border-left: 5px solid transparent;
+
 }
 
 .sub-navigation li:hover a {
     border-left: 5px solid #8d99ae;
     color: #edf2f4;
+    transform: scale(1.01);
 }
