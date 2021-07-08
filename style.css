@@ -4,18 +4,60 @@
     box-sizing: border-box;
 }
 
-.header {
-    background: slateblue;
-    padding: 1rem 0;
+body {
+    font-family: "Lato", sans-serif, monospace;
 }
 
-.title {
-    color: #fff;
-    text-align: center;
+header {
+    width: 100%;
+    background: #edf2f4;
 }
 
-.blog {
+.navigation {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.navigation > li {
+    list-style: none;
+}
+
+.navigation > li > a {
     display: inline-block;
-    width: 40%;
-    outline: 2px solid red;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #2b2d42;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-bottom: 2px solid transparent;
+    transition: all .5s;
+}
+
+/* dropdown css */
+
+.sub-navigation {
+    display: none;
+    background: #2b2d42;
+    border-top: 5px solid #8d99ae;
+}
+.navigation > li:hover .sub-navigation{
+    display: block;
+    position: absolute;    
+}
+
+.sub-navigation li{
+    list-style: none;
+}
+.sub-navigation li a{
+    display: inline-block;
+    color: #8d99ae;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.sub-navigation li:hover a {
+    border-left: 5px solid #8d99ae;
+    color: #edf2f4;
 }
